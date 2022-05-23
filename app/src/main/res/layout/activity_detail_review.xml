@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_d3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="20dp"
+        app:layout_constraintStart_toEndOf="@id/guideline_d1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_d2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/ImageProduct"
+            android:src="@drawable/bg_myprofile" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".4"
+        android:text="Chef Dazzy"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/cardview1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_d2" />
+
+    <RatingBar
+        android:id="@+id/rating_d"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:numStars="5"
+        android:outlineSpotShadowColor="#F7C000"
+        android:progressTint="#F7C000"
+        android:requiresFadingEdge="vertical"
+        android:stepSize="1"
+        app:layout_constraintStart_toEndOf="@id/txt_d1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_d2" />
+
+    <ImageView
+        android:id="@+id/img_d1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_distance"
+        app:layout_constraintStart_toEndOf="@id/rating_d"
+        app:layout_constraintTop_toBottomOf="@id/guideline_d2" />
+
+    <TextView
+        android:id="@+id/txt_d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1 mile away"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/img_d1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_d2" />
+
+    <TextView
+        android:id="@+id/rava_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:minLines="1"
+        android:maxLines="4"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/txt_d3"
+        app:layout_constraintStart_toEndOf="@id/cardview1"
+        app:layout_constraintTop_toBottomOf="@id/txt_d1" />
+
+    <TextView
+        android:id="@+id/detail_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="Showmore"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/txt_d3"
+        app:layout_constraintEnd_toStartOf="@id/guideline_d3"
+        app:layout_constraintTop_toBottomOf="@id/rava_d" />
+
+    <TextView
+        android:id="@+id/txt_d3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Cuisine :"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/img_1"
+        app:layout_constraintEnd_toStartOf="@+id/txt2"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/cardview1"
+        app:layout_constraintTop_toBottomOf="@id/rava_d" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="South Indian"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/img_1"
+        app:layout_constraintEnd_toStartOf="@+id/detail_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_d3"
+        app:layout_constraintTop_toBottomOf="@id/rava_d" />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_food_detail"
+        app:layout_constraintEnd_toStartOf="@id/guideline_d2"
+        app:layout_constraintStart_toEndOf="@id/guideline_d1"
+        app:layout_constraintTop_toBottomOf="@id/txt_d3" />
+
+    <TextView
+        android:id="@+id/txt_d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".6"
+        android:text="$25.00"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_d1"
+        app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+    <TextView
+        android:id="@+id/txt_d5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="13dp"
+        android:text="Qty"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_minus_arrow"
+        app:layout_constraintStart_toEndOf="@id/txt_d4"
+        app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+    <ImageButton
+        android:id="@+id/btn_minus_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@id/txt_review6"
+        android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintStart_toEndOf="@id/txt_d5"
+        app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+    <TextView
+        android:id="@+id/txt_review6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_plus_arrow"
+        app:layout_constraintStart_toEndOf="@id/btn_minus_arrow"
+        app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+    <ImageButton
+        android:id="@+id/btn_plus_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@id/fav_add"
+        android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintStart_toEndOf="@id/txt_review6"
+        app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fav_add"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/icon_add"
+        app:layout_constraintEnd_toStartOf="@id/guideline_d3"
+        app:layout_constraintStart_toEndOf="@id/btn_plus_arrow"
+        app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+    <View
+        android:id="@+id/view_d"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_grey"
+        app:layout_constraintTop_toBottomOf="@id/fav_add" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/view_d"
+        app:tabBackground="@drawable/detail"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"></com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_d"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_d4"
+        app:layout_constraintEnd_toStartOf="@id/guideline_d3"
+        app:layout_constraintStart_toEndOf="@id/guideline_d1"
+        app:layout_constraintTop_toBottomOf="@id/tablayout_details" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.modak" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".ModakApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo_modak_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_logo_modak_main"
+        android:screenOrientation="sensorPortrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstApp"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".view.ui.detail.Detail_Review_Activity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity"/>
+
+        <activity
+            android:name=".view.ui.header.ModakWalletActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.AddCartActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.header.analytics.AnalyticsActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.functionalities.PassBookActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.functionalities.NearbyActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.functionalities.ReminderActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.functionalities.StatementActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.wallet.TransferActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.wallet.SendActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.wallet.AddActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.header.wallet.PayActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.header.ModakMoneyActivity" />
+        <activity
+            android:name=".view.ui.conform.Conform_M_Activity"
+            android:exported="false"
+            android:theme="@style/SplashTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".view.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.menu.DinnerActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.chef.ChefActivity" />
+        <activity
+            android:name=".view.ui.menu.LunchActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.chef.ChefActivity" />
+        <activity
+            android:name=".view.ui.menu.BreakfastActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.chef.ChefActivity" />
+        <activity
+            android:name=".view.ui.chef.ChefActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.detail.Detail_Review_Activity" />
+        <activity
+            android:name=".view.ReviewOrderActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.header.ModakMoneyActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.header.ReviewActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.header.MyOrderActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.RatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Address"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.payment_method.CreatePaymentMethodActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.payment_method.PaymentMethodActivity" />
+        <activity
+            android:name=".view.ui.payment_method.PaymentMethodActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.drawer.LocationActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ChangePasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.BasketActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.header.EditProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".view.ui.signup.SignupActivity"
+            android:exported="false"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".view.ui.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".view.ui.dashboard.DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.SelectCityActivity"
+            android:exported="false"
+            android:parentActivityName=".view.ui.dashboard.DashboardActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

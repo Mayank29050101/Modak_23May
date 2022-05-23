@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="10dp" />
+
+    <SearchView
+        android:id="@+id/home_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/curve"
+        android:backgroundTint="@color/color_grey"
+        android:queryHint="Find a food you like"
+        android:searchIcon="@android:color/transparent"
+        app:iconifiedByDefault="true"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_hp2"
+        app:searchHintIcon="@drawable/serach" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/magnifying_glass"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_hp2"
+        app:tint="@color/red" />
+
+    <TextView
+        android:id="@+id/txt_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Popular Near You"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/home_search" />
+
+    <TextView
+        android:id="@+id/txt_showall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Show all"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintTop_toBottomOf="@id/home_search" />
+
+    <FrameLayout
+        android:id="@+id/popular_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/txt_popular">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_popular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Shop By Category"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/popular_food" />
+
+    <TextView
+        android:id="@+id/txt_showall_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="Show all"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintTop_toBottomOf="@id/popular_food" />
+
+    <FrameLayout
+        android:id="@+id/frame_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/txt_shop"
+        app:layout_constraintBottom_toTopOf="@id/viewPager_ads">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_shopbycategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"/>
+    </FrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_ads"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/frame_category"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout_ads"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_hp4"
+        app:layout_constraintEnd_toStartOf="@id/guideline_hp3"
+        app:layout_constraintStart_toEndOf="@id/guideline_hp1"
+        app:layout_constraintTop_toBottomOf="@id/viewPager_ads"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

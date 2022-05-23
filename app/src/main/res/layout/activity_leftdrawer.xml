@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:text="Ahmedabad"
+                android:textSize="27sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/local"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                android:background="@drawable/serach" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/filter"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/store">
+            </ImageView>
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll_v">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/banner_scroll">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:paddingBottom="50dp"
+                        android:text="Enter zip code or Address"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true">
+                        <androidx.appcompat.widget.SearchView
+                            android:id="@+id/search_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/curve"
+                            android:gravity="center">
+
+                        </androidx.appcompat.widget.SearchView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/oroval"
+                        android:text="OR"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="22sp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="  Select Home Address"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:background="@android:color/darker_gray"
+                        android:layout_alignParentBottom="true"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical">
+                    </TextView>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textSize="30sp"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="53dp"
+                            android:layout_height="60dp"
+                            android:layout_weight=".9"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="350 Fifth Avenue ,34th floor "
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New York,NY 10118-3299 USA"
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_weight=".1"
+                            android:layout_height="@dimen/margin_50">
+                            <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_marginStart="40dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:scaleX="1.5"
+                                android:scaleY="1.5"
+                                android:button="@drawable/custom_checkbox">
+                            </androidx.appcompat.widget.AppCompatCheckBox>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray">
+                </TextView>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Office"
+                        android:textSize="30sp"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="53dp"
+                            android:layout_height="60dp"
+                            android:layout_weight=".9"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="350 Fifth Avenue ,34th floor "
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New York,NY 10118-3299 USA"
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_weight=".1"
+                            android:layout_height="@dimen/margin_50">
+                            <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_marginStart="40dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:scaleX="1.5"
+                                android:scaleY="1.5"
+                                android:button="@drawable/custom_checkbox">
+                            </androidx.appcompat.widget.AppCompatCheckBox>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray">
+                </TextView>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address 3"
+                        android:textSize="30sp"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="53dp"
+                            android:layout_height="60dp"
+                            android:layout_weight=".9"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="350 Fifth Avenue ,34th floor "
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New York,NY 10118-3299 USA"
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_weight=".1"
+                            android:layout_height="@dimen/margin_50">
+                            <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_marginStart="40dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:scaleX="1.5"
+                                android:scaleY="1.5"
+                                android:button="@drawable/custom_checkbox">
+                            </androidx.appcompat.widget.AppCompatCheckBox>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray">
+                </TextView>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="30sp"
+                        android:textColor="@color/black">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="53dp"
+                            android:layout_height="60dp"
+                            android:layout_weight=".9"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="350 Fifth Avenue ,34th floor "
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New York,NY 10118-3299 USA"
+                                android:textColor="@color/black"
+                                android:textSize="22sp">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_weight=".1"
+                            android:layout_height="@dimen/margin_50">
+                            <androidx.appcompat.widget.AppCompatCheckBox
+                                android:layout_marginStart="40dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:scaleX="1.5"
+                                android:scaleY="1.5"
+                                android:button="@drawable/custom_checkbox">
+                            </androidx.appcompat.widget.AppCompatCheckBox>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@android:color/darker_gray">
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/left">
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

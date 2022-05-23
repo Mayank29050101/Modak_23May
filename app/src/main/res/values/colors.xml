@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#C72128</color>
+    <color name="navy">#1F3E58</color>
+    <color name="tab_selected">#C72128</color>
+    <color name="tab_unslected">#FFFF</color>
+    <color name="button_color">#CC161E</color>
+    <color name="yellow">#FFC107</color>
+    <color name="color_grey">#E4E4E4</color>
+    <color name="secondary_red">#AF1D23</color>
+    <color name="green">#06BC4A</color>
+    <color name="fires1">#F3E082</color>
+    <color name="fires2">#F1BA2B</color>
+    <color name="fires3">#DF8220</color>
+    <color name="darkColor">#29ABE2</color>
+</resources>

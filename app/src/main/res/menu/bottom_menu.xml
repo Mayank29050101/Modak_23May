@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_fav"
+        android:icon="@drawable/heart"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/item_delivery"
+        android:icon="@drawable/del"
+        android:title="Delivery" />
+    <item
+        android:id="@+id/item_take"
+        android:icon="@drawable/take_away_f"
+        android:title="Take Out" />
+    <item
+        android:id="@+id/item_dine"
+        android:icon="@drawable/dinein_"
+        android:title="Dine In" />
+
+</menu>

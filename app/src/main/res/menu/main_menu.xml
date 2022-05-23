@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home_"
+            android:icon="@drawable/leftmenu_icon1"
+            android:title="Home"
+            android:iconTintMode="multiply" />
+        <item
+
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user_"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/leftmenu_icon3"
+            android:title="My Addresses" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/leftmenu_icon4"
+            android:title="Payment Info" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/leftmenu_icon5"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_meal"
+            android:icon="@drawable/leftmenu_icon6"
+            android:title="Free Meals" />
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@drawable/tag"
+            android:title="Offers"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/gear"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/leftmenu_icon8"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+</menu>

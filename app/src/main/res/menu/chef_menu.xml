@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/review"
+        android:icon="@drawable/icon_review"
+        android:title="Review"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/ic_baseline_stars_24"
+        android:title="Rate"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/Menu"
+        android:icon="@drawable/icon_menu_chef_detail"
+        android:title="Menu"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+
+
+</menu>

@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Modak</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address_line1">Address Line1</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mayank">Mayank</string>
+    <string name="ingle">Ingle</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+    <string name="fav1">fav1</string>
+    <string name="fav2">fav2</string>
+    <string name="fav3">fav3</string>
+    <string name="fav4">fav4</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_filter">filter</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="instagram">1330801997392113</string>
+    <string name="facebook_app_id">1113508166075368</string>
+    <string name="fb_login_protocol_scheme">fb1113508166075368</string>
+    <string name="facebook_client_token">4db7818ad63c67b8fc0ba29ce7badf44</string>
+    <string-array name="year">
+        <item>Select year</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+    </string-array>
+    <string-array name="month">
+        <item>Select month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="card">
+        <item>Select card</item>
+        <item>VISA</item>
+        <item>MasterCard</item>
+        <item>SBI</item>
+        <item>Kotak</item>
+        <item>ICICI</item>
+        <item>BOB</item>
+    </string-array>
+    <string-array name="country">
+        <item>Select Country</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="city">
+        <item>Select City</item>
+        <item>Vadodara</item>
+    </string-array>
+    <string-array name="topic">
+        <item>Select Reason</item>
+        <item>General issues</item>
+        <item>Partner Onboarding</item>
+        <item>Legal,Term and Condition</item>
+        <item>Modak Money FAQs</item>
+        <item>Modak Dinner FAQs</item>
+        <item>Modak Takeout FAQs</item>
+    </string-array>
+
+    <style name="slider_red">
+        <item name="colorPrimary">@color/red</item>
+    </style>
+
+    <style name="ActivityDialog" parent="AppTheme.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="msg_please_wait">Loading...</string>
+    <string name="title_activity_deatil_review">Deatil_ReviewActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <!--    <string name="default_web_client_id">550483134252-h8rt64904adj9te11q6a7ehj037q4k3i.apps.googleusercontent.com</string>-->
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.header.wallet.SendActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_s3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_s4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="10dp" />
+
+    <TextView
+        android:id="@+id/txt_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Modak Gift Voucher"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_s2" />
+
+    <TextView
+        android:id="@+id/txt_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Recharge,pay bills,shop online or pay at any store"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"
+        app:layout_constraintTop_toBottomOf="@id/txt_gift" />
+
+    <TextView
+        android:id="@+id/txt_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="View More"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"
+        app:layout_constraintTop_toBottomOf="@id/txt_details" />
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_radiogroup"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_s3"
+        app:layout_constraintTop_toBottomOf="@id/txt_view_more">
+        <RadioButton
+            android:id="@+id/btn_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/red"
+            android:text="For Self"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_friend"
+            app:layout_constraintStart_toEndOf="@id/guideline_s1"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_more" />
+
+        <RadioButton
+            android:id="@+id/btn_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/red"
+            android:layout_marginTop="20dp"
+            android:text="For Friends/ Family"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_self"
+            app:layout_constraintTop_toBottomOf="@id/txt_view_more" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_name"
+        android:textColor="@color/black"
+        android:text="Mayank Ingle"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btn_radiogroup"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_phone_no."
+        android:text="6355254517"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_name"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_amount"
+        android:hint="₹ Amount"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_phone_no."
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_s3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_proceed"
+        android:textSize="14sp"
+        android:text="Proceed"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/edt_amount"
+        app:layout_constraintStart_toEndOf="@id/guideline_s1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_s3"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
